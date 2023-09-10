@@ -42,7 +42,6 @@ const quotes = [
 
 
 // returns a random quote object from array of objects
-
 function getRandomQuote(quotes) {
   const randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
@@ -50,7 +49,6 @@ function getRandomQuote(quotes) {
 
 
 //function that gets called when click button
-
 function printQuote() {
   let randomQuote = getRandomQuote(quotes);
   let htmlString = `
@@ -74,7 +72,6 @@ function printQuote() {
 
 // change background color
 // function inspired by https://www.w3resource.com/javascript-exercises/javascript-math-exercise-40.php
-
 function changeBkgd() {
   const a = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
